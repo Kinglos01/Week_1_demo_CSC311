@@ -1,9 +1,11 @@
+package org.example;
+
 class Vehicle {
 
-    int wheelnum;
-    String color;
-    float engsize;
-    String fuel;
+    private  int wheelnum;
+    private String color;
+    private float engsize;
+    private String fuel;
 
 
     public int getnumberOfWheels(){
@@ -22,11 +24,11 @@ class Vehicle {
         return fuel;
     }
 
-    public void constructor(){
-        this.getnumberOfWheels();
-        this.getVehicleColor();
-        this.getEnginesize();
-        this.getFuelType();
+    public Vehicle(int wheels, String C, float E, String F){
+        wheelnum = wheels;
+        color = C;
+        engsize = E;
+        fuel = F;
     }
 
 }
